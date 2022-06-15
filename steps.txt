@@ -1,0 +1,30 @@
+Go to nu 140\ NuvotonPlatform_Keil\Sample \EduSampleCode 
+create a folder there
+Open IDE
+Create project>select NUC140VE3AN(double click on nuvoton) 
+add the following files to source group:
+core_cm0.c
+system_NUCIxx.c
+DrvGPIO. c
+DrvSYS. c
+ ________________
+nu 140 >  NuvotonPlatform_Keil > Src > Driver : for Drv files 
+nu140 > CMSIS > CM0 > CoreSupport > core_cm0.c
+nu140 > CMSIS > CM0 > DeviceSupport > just keep going in and you'll get system file
+________________
+
+create a new file 
+write your code
+save it as c file
+add it to the source group
+
+target > right click on target > options for target :
+
+>C/C++ > include paths > include Include folder, driver and NUC1xx.. folders in include folder
+
+>Debug and Utilities > change it to NULink Debugger
+
+and then build it
+connect the board 
+load it 
+press on reset button
